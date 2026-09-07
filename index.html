@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.V Caterers | Royal Wedding & Event Catering by Rakesh</title>
+    <meta name="description" content="S.V Caterers offers royal Indian wedding and celebration catering curated by Rakesh. Grand Hyderabadi Biryani, traditional South Indian feasts, live chaat stalls, and luxury banquets. Contact: +91 95736 05102.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-950 text-stone-100 antialiased selection:bg-amber-500 selection:text-stone-950">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-amber-950 via-amber-900/90 to-stone-950 border-b border-amber-800/40 py-2 px-4 text-xs font-medium text-amber-200">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Accepting Bookings for Weddings, Receptions & Celebrations 2026-2027</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="hidden sm:inline">Owner & Master Caterer: <strong class="text-amber-100">Rakesh</strong></span>
+                <a href="tel:+919573605102" class="flex items-center gap-1 text-amber-300 hover:text-white font-bold transition-colors">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> +91 95736 05102
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-stone-950/80 backdrop-blur-md border-b border-stone-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 via-amber-600 to-amber-800 p-0.5 shadow-lg shadow-amber-950/50 flex items-center justify-center">
+                    <div class="w-full h-full bg-stone-950 rounded-[10px] flex items-center justify-center">
+                        <span class="font-royal text-xl font-black text-gold-gradient group-hover:scale-110 transition-transform">SV</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-royal text-2xl font-bold tracking-wider text-gold-gradient block">S.V CATERERS</span>
+                    <span class="text-[10px] tracking-[0.25em] text-stone-400 uppercase block font-semibold">Curated by Rakesh</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-300">
+                <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+                <a href="#menu" class="hover:text-amber-400 transition-colors">Royal Menus</a>
+                <a href="#packages" class="hover:text-amber-400 transition-colors">Packages</a>
+                <a href="#calculator" class="hover:text-amber-400 text-amber-300 font-semibold flex items-center gap-1 transition-colors">
+                    <i data-lucide="calculator" class="w-3.5 h-3.5 text-amber-400"></i> Cost Estimator
+                </a>
+                <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
+                <a href="#reviews" class="hover:text-amber-400 transition-colors">Reviews</a>
+            </nav>
+
+            <!-- Header Action CTAs -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="tel:+919573605102" class="px-4 py-2 rounded-xl border border-amber-500/40 text-amber-300 hover:bg-amber-500/10 font-semibold text-xs flex items-center gap-2 transition-all">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                    <span>Call Rakesh</span>
+                </a>
+                <a href="https://wa.me/919573605102?text=Hello%20Rakesh%20ji,%20I%20would%20like%20to%20inquire%20about%20catering%20for%20my%20upcoming%20event." target="_blank" class="btn-gold px-5 py-2 rounded-xl text-xs font-bold flex items-center gap-2 shadow-md">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>Book on WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Hamburger -->
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-stone-300 hover:text-white" aria-label="Toggle Navigation">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-stone-900 border-b border-stone-800 px-6 py-6 space-y-4">
+            <a href="#about" class="mobile-link block text-base font-medium text-stone-300 hover:text-amber-400">About S.V Caterers</a>
+            <a href="#menu" class="mobile-link block text-base font-medium text-stone-300 hover:text-amber-400">Royal Menus</a>
+            <a href="#packages" class="mobile-link block text-base font-medium text-stone-300 hover:text-amber-400">Catering Packages</a>
+            <a href="#calculator" class="mobile-link block text-base font-medium text-amber-400 font-semibold">Cost Calculator</a>
+            <a href="#services" class="mobile-link block text-base font-medium text-stone-300 hover:text-amber-400">Event Services</a>
+            <a href="#gallery" class="mobile-link block text-base font-medium text-stone-300 hover:text-amber-400">Ambiance Gallery</a>
+            <a href="#reviews" class="mobile-link block text-base font-medium text-stone-300 hover:text-amber-400">Client Reviews</a>
+            <div class="pt-4 border-t border-stone-800 flex flex-col gap-3">
+                <a href="tel:+919573605102" class="w-full text-center py-2.5 rounded-xl border border-amber-500/50 text-amber-300 font-bold text-sm flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Call Rakesh: 9573605102
+                </a>
+                <a href="https://wa.me/919573605102?text=Hello%20Rakesh%20ji,%20I%20would%20like%20to%20inquire%20about%20catering%20services." target="_blank" class="w-full text-center py-2.5 rounded-xl btn-gold text-stone-950 font-bold text-sm flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Atmospheric & Regal Ambiance) -->
+    <section class="relative min-h-[92vh] flex items-center justify-center text-center px-4 overflow-hidden ambient-glow">
+        <!-- Background Image with vignette overlay -->
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920&auto=format&fit=crop" 
+                alt="Royal Wedding Banquet Ambiance" 
+                class="w-full h-full object-cover object-center brightness-50"
+            />
+            <div class="hero-vignette"></div>
+        </div>
+
+        <!-- Floating Particles / Ambient Sparkles -->
+        <div class="relative z-10 max-w-5xl mx-auto py-16">
+            <!-- Crown / Regal Icon Motif -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-semibold uppercase tracking-widest mb-6 animate-float">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
+                <span>Royal Celebrations • Grand Banquets • Pure Hospitality</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-tight">
+                Where Royal Tradition Meets <br />
+                <span class="text-gold-gradient font-royal">Exquisite Flavors</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="mt-6 text-lg sm:text-xl text-stone-300 max-w-3xl mx-auto font-light leading-relaxed">
+                Elevate your wedding and family festivities with signature culinary craftsmanship by 
+                <strong class="text-amber-300 font-semibold">S.V Caterers</strong>. Curated with dedication, authentic spice secrets, and personal attention by <strong class="text-white font-semibold">Rakesh</strong>.
+            </p>
+
+            <!-- CTA Action Buttons -->
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#calculator" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl text-base font-bold flex items-center justify-center gap-2 shadow-xl">
+                    <i data-lucide="calculator" class="w-5 h-5"></i>
+                    <span>Calculate Event Budget</span>
+                </a>
+                <a href="https://wa.me/919573605102?text=Hello%20Rakesh%20ji,%20I%20am%20planning%20an%20event%20and%20need%20catering%20details." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base flex items-center justify-center gap-2 shadow-xl pulse-whatsapp transition-all">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>WhatsApp Inquiry (Rakesh)</span>
+                </a>
+                <a href="tel:+919573605102" class="w-full sm:w-auto px-6 py-4 rounded-xl glass-panel text-amber-300 hover:text-white font-bold text-base flex items-center justify-center gap-2 transition-all">
+                    <i data-lucide="phone-call" class="w-5 h-5 text-amber-400"></i>
+                    <span>9573605102</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="glass-panel p-5 rounded-2xl text-center">
+                    <div class="font-royal text-3xl md:text-4xl font-black text-gold-gradient">850+</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold mt-1">Grand Events Catered</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl text-center">
+                    <div class="font-royal text-3xl md:text-4xl font-black text-gold-gradient">300K+</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold mt-1">Delighted Guests Served</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl text-center">
+                    <div class="font-royal text-3xl md:text-4xl font-black text-gold-gradient">100%</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold mt-1">Pure Desi Ghee & RO Water</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl text-center">
+                    <div class="font-royal text-3xl md:text-4xl font-black text-gold-gradient">4.9 ★</div>
+                    <div class="text-xs text-stone-400 uppercase tracking-wider font-semibold mt-1">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section & Owner Rakesh Spotlight -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left: Visual Atmosphere & Badges -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-3xl overflow-hidden border border-amber-500/30 shadow-2xl shadow-amber-950/50">
+                    <img 
+                        src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=800&auto=format&fit=crop" 
+                        alt="S.V Caterers Banquet Experience" 
+                        class="w-full h-[480px] object-cover"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/30 to-transparent"></div>
+                    
+                    <!-- Floating Owner Badge -->
+                    <div class="absolute bottom-6 left-6 right-6 p-5 glass-panel rounded-2xl border border-amber-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 to-amber-700 flex items-center justify-center text-stone-950 font-black text-xl shadow-lg shrink-0">
+                                R
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-lg font-bold text-white">Rakesh</h4>
+                                <p class="text-xs text-amber-300 font-semibold">Founder & Head of Catering Operations</p>
+                                <p class="text-xs text-stone-400 mt-0.5">Direct Line: +91 95736 05102</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: The S.V Caterers Philosophy -->
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
+                    <i data-lucide="award" class="w-4 h-4"></i>
+                    <span>Catering Heritage & Passion</span>
+                </div>
+                
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-stone-100 leading-tight">
+                    Crafting Every Meal as a <br />
+                    <span class="text-gold-gradient font-royal">Sacred Family Celebration</span>
+                </h2>
+
+                <p class="text-stone-300 mt-6 leading-relaxed">
+                    At <strong>S.V Caterers</strong>, we believe food is the beating heart of every celebration. Founded and personally supervised by <strong>Rakesh</strong>, our catering service has transformed weddings, receptions, housewarmings, and corporate galas into grand culinary feasts across Hyderabad and the Telugu states.
+                </p>
+
+                <!-- Personal Quote from Rakesh -->
+                <div class="mt-6 p-6 rounded-2xl bg-amber-950/20 border-l-4 border-amber-500 border-y border-r border-amber-900/30">
+                    <p class="text-amber-100 text-sm italic font-serif leading-relaxed">
+                        "For us, every booking is not just an order—it is a sacred trust. When hundreds of guests come together to celebrate your family's joyous milestone, their smiles after the first bite are our true achievement. I personally ensure pure ingredients, spotless hygiene, and seamless serving from start to finish."
+                    </p>
+                    <div class="mt-3 flex items-center justify-between">
+                        <span class="text-xs font-bold text-amber-400 tracking-wider uppercase">— Rakesh, Owner & Chef Curator</span>
+                        <a href="tel:+919573605102" class="text-xs font-semibold text-stone-300 hover:text-white flex items-center gap-1">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i> Speak with Rakesh
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 Pillars Grid -->
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-stone-900/40 border border-stone-800">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-200">Generational Spice Blends</h4>
+                            <p class="text-xs text-stone-400 mt-0.5">Custom stone-ground masalas and pure desi cow ghee for authentic aroma.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-stone-900/40 border border-stone-800">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-200">5-Star Kitchen Sanitation</h4>
+                            <p class="text-xs text-stone-400 mt-0.5">RO-purified water, food-grade equipment, and certified hygiene protocols.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-stone-900/40 border border-stone-800">
+                        <i data-lucide="clock" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-200">Punctual & Hot Serving</h4>
+                            <p class="text-xs text-stone-400 mt-0.5">Live chaffing and tawa stations ensuring every dish is piping hot.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-stone-900/40 border border-stone-800">
+                        <i data-lucide="users" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-stone-200">Courteous Uniformed Staff</h4>
+                            <p class="text-xs text-stone-400 mt-0.5">Trained service captains offering warm, respectful Indian hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Multi-Cuisine Menu Showcase -->
+    <section id="menu" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                <i data-lucide="utensils" class="w-4 h-4"></i>
+                <span>Culinary Repertoire</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                Explore Our <span class="text-gold-gradient font-royal">Royal Menus</span>
+            </h2>
+            <div class="royal-divider">
+                <span class="w-3 h-3 rotate-45 bg-amber-500 inline-block"></span>
+            </div>
+            <p class="text-stone-300 text-sm sm:text-base">
+                From slow-dum Hyderabadi biryanis and satvik banana leaf meals to theatrical live chaat stalls and artisanal desserts. Filter below to discover signature items.
+            </p>
+        </div>
+
+        <!-- Filter Buttons Container -->
+        <div id="categoryFilters" class="mt-10 flex items-center justify-start sm:justify-center gap-2.5 overflow-x-auto pb-4 scrollbar-none">
+            <!-- Rendered by JS -->
+        </div>
+
+        <!-- Menu Grid -->
+        <div id="menuGrid" class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rendered dynamically by js/app.js -->
+        </div>
+
+        <!-- Direct Custom Menu CTA -->
+        <div class="mt-12 p-8 glass-panel rounded-3xl border border-amber-500/40 text-center max-w-4xl mx-auto">
+            <h3 class="font-serif text-2xl font-bold text-white">Looking for a Custom Family Recipe or Special Regional Spread?</h3>
+            <p class="text-stone-300 text-sm mt-2 max-w-2xl mx-auto">
+                Rakesh personally crafts custom menus for Arya Vysya, Brahmin Satvik, Reddy, Telangana special, Rayalaseema, and North Indian wedding traditions.
+            </p>
+            <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
+                <a href="https://wa.me/919573605102?text=Hello%20Rakesh%20ji,%20I%20would%20like%20to%20customize%20a%20catering%20menu%20for%20my%20event." target="_blank" class="btn-gold px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Rakesh for Custom Menu
+                </a>
+                <a href="tel:+919573605102" class="btn-outline-gold px-6 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Call: 9573605102
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Packages Section -->
+    <section id="packages" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                <i data-lucide="crown" class="w-4 h-4"></i>
+                <span>Curated Banquet Packages</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                Transparent & <span class="text-gold-gradient font-royal">Grand Packages</span>
+            </h2>
+            <div class="royal-divider">
+                <span class="w-3 h-3 rotate-45 bg-amber-500 inline-block"></span>
+            </div>
+            <p class="text-stone-300 text-sm sm:text-base">
+                Carefully designed packages offering complete peace of mind, from welcome drinks to royal dessert counters. All prices include premium service and infrastructure.
+            </p>
+        </div>
+
+        <!-- Packages Grid -->
+        <div id="packagesGrid" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <!-- Rendered by js/app.js -->
+        </div>
+    </section>
+
+    <!-- Interactive Catering Cost Estimator / Calculator -->
+    <section id="calculator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border-2 border-amber-500/40 relative overflow-hidden shadow-2xl shadow-amber-950/60 ambient-glow">
+            
+            <div class="text-center max-w-2xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider mb-3">
+                    <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+                    <span>Interactive Cost Estimator</span>
+                </div>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+                    Estimate Your <span class="text-gold-gradient font-royal">Catering Budget</span>
+                </h3>
+                <p class="text-stone-300 text-sm mt-2">
+                    Adjust the guest count and select your preferred package to get an instant approximate estimate. Connect directly with Rakesh on WhatsApp for the best finalized quote.
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Controls Column -->
+                <div class="md:col-span-7 space-y-6">
+                    
+                    <!-- Event Type Selector -->
+                    <div>
+                        <label for="calcEventType" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-2">
+                            Select Event Type
+                        </label>
+                        <select id="calcEventType" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 font-medium focus:border-amber-500 focus:outline-none">
+                            <option value="Wedding & Reception">Grand Wedding & Reception</option>
+                            <option value="Sangeet & Haldi Night">Sangeet & Haldi Celebration</option>
+                            <option value="Gruhapravesam / Pooja">Gruhapravesam & Pooja Bhojanam</option>
+                            <option value="Engagement Ceremony">Engagement Ceremony</option>
+                            <option value="Birthday & Anniversary">Birthday Gala / Anniversary</option>
+                            <option value="Corporate Banquet">Corporate Banquet</option>
+                        </select>
+                    </div>
+
+                    <!-- Guest Count Slider -->
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-stone-300 uppercase tracking-wider">Number of Guests</span>
+                            <span class="text-xl font-extrabold text-amber-400 font-serif">
+                                <span id="guestCountDisplay">250</span> Guests
+                            </span>
+                        </div>
+                        <input 
+                            type="range" 
+                            id="guestSlider" 
+                            min="50" 
+                            max="2500" 
+                            step="25" 
+                            value="250" 
+                            class="w-full gold-slider"
+                        />
+                        <div class="flex justify-between text-[11px] text-stone-500 mt-1">
+                            <span>50 Guests</span>
+                            <span>500</span>
+                            <span>1,000</span>
+                            <span>1,500</span>
+                            <span>2,500+ Guests</span>
+                        </div>
+                    </div>
+
+                    <!-- Package Selector Radios -->
+                    <div>
+                        <label class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-2">
+                            Choose Catering Tier
+                        </label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-stone-700 bg-stone-900/60 cursor-pointer hover:border-amber-500/60 transition-all text-center">
+                                <input type="radio" name="calcPackage" value="silver" class="sr-only peer">
+                                <span class="text-xs font-bold peer-checked:text-amber-400 text-stone-300">Silver Feast</span>
+                                <span class="text-sm font-extrabold text-stone-100 mt-1">₹450</span>
+                                <span class="absolute inset-0 rounded-xl border-2 border-transparent peer-checked:border-amber-500 pointer-events-none"></span>
+                            </label>
+
+                            <label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-stone-700 bg-stone-900/60 cursor-pointer hover:border-amber-500/60 transition-all text-center">
+                                <input type="radio" name="calcPackage" value="gold" checked class="sr-only peer">
+                                <span class="text-xs font-bold peer-checked:text-amber-400 text-amber-400 flex items-center gap-1 justify-center">
+                                    <i data-lucide="crown" class="w-3 h-3"></i> Gold Royal
+                                </span>
+                                <span class="text-sm font-extrabold text-stone-100 mt-1">₹650</span>
+                                <span class="absolute inset-0 rounded-xl border-2 border-transparent peer-checked:border-amber-500 pointer-events-none"></span>
+                            </label>
+
+                            <label class="relative flex flex-col items-center justify-center p-3 rounded-xl border border-stone-700 bg-stone-900/60 cursor-pointer hover:border-amber-500/60 transition-all text-center">
+                                <input type="radio" name="calcPackage" value="platinum" class="sr-only peer">
+                                <span class="text-xs font-bold peer-checked:text-amber-400 text-stone-300">Platinum</span>
+                                <span class="text-sm font-extrabold text-stone-100 mt-1">₹950</span>
+                                <span class="absolute inset-0 rounded-xl border-2 border-transparent peer-checked:border-amber-500 pointer-events-none"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Result Box Column -->
+                <div class="md:col-span-5 bg-gradient-to-br from-amber-950/40 via-stone-900/90 to-stone-950 p-6 rounded-2xl border border-amber-500/30 text-center flex flex-col justify-between h-full">
+                    <div>
+                        <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest block">Estimated Cost Breakdown</span>
+                        
+                        <div class="mt-4 pb-4 border-b border-stone-800">
+                            <span class="text-stone-400 text-xs">Base Per Plate</span>
+                            <div id="calcPricePerPlate" class="text-2xl font-bold text-amber-300">₹650</div>
+                        </div>
+
+                        <div class="mt-4">
+                            <span class="text-stone-400 text-xs uppercase tracking-wider">Total Estimated Budget</span>
+                            <div id="calcTotalEstimate" class="font-serif text-3xl sm:text-4xl font-extrabold text-gold-gradient mt-1">
+                                ₹1,62,500
+                            </div>
+                            <span class="text-[11px] text-stone-500 block mt-1">*Excluding venue charges & specific live stall add-ons. Final quote upon tasting.</span>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp CTA -->
+                    <div class="mt-6 pt-4 border-t border-stone-800/80">
+                        <a 
+                            id="calcWhatsAppBtn" 
+                            href="#" 
+                            target="_blank" 
+                            class="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg pulse-whatsapp transition-all">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>Send Estimate to Rakesh on WhatsApp</span>
+                        </a>
+                        <p class="text-[11px] text-stone-400 mt-2">
+                            Direct connection with Owner Rakesh: <strong>+91 9573605102</strong>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services & Occasions -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                <span>Our Expertise</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                Celebrations We <span class="text-gold-gradient font-royal">Elevate</span>
+            </h2>
+            <div class="royal-divider">
+                <span class="w-3 h-3 rotate-45 bg-amber-500 inline-block"></span>
+            </div>
+            <p class="text-stone-300 text-sm sm:text-base">
+                Whether an intimate gathering of 50 or an opulent wedding of 5,000+, S.V Caterers brings unrivaled culinary excellence and gracious service.
+            </p>
+        </div>
+
+        <div id="servicesGrid" class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rendered by js/app.js -->
+        </div>
+    </section>
+
+    <!-- Visual Ambiance & Banquet Gallery -->
+    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                <i data-lucide="image" class="w-4 h-4"></i>
+                <span>Atmosphere & Setups</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                A Glimpse of <span class="text-gold-gradient font-royal">Our Ambiance</span>
+            </h2>
+            <div class="royal-divider">
+                <span class="w-3 h-3 rotate-45 bg-amber-500 inline-block"></span>
+            </div>
+            <p class="text-stone-300 text-sm sm:text-base">
+                Exquisite table styling, live counter setups, authentic leaf service, and culinary presentations captured from our real celebrations.
+            </p>
+        </div>
+
+        <div id="galleryGrid" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rendered by js/app.js -->
+        </div>
+    </section>
+
+    <!-- Reviews & Testimonials -->
+    <section id="reviews" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                <i data-lucide="heart" class="w-4 h-4"></i>
+                <span>Client Love</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">
+                Words from Our <span class="text-gold-gradient font-royal">Valued Hosts</span>
+            </h2>
+            <div class="royal-divider">
+                <span class="w-3 h-3 rotate-45 bg-amber-500 inline-block"></span>
+            </div>
+            <p class="text-stone-300 text-sm sm:text-base">
+                Discover why families across Hyderabad and Telangana trust Rakesh & S.V Caterers for their most cherished milestones.
+            </p>
+        </div>
+
+        <div id="testimonialsGrid" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Rendered by js/app.js -->
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+                Frequently Asked <span class="text-gold-gradient font-royal">Questions</span>
+            </h2>
+            <p class="text-stone-400 text-sm mt-2">Everything you need to know about booking and planning with S.V Caterers.</p>
+        </div>
+
+        <div id="faqContainer" class="space-y-4">
+            <!-- Rendered by js/app.js -->
+        </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Left Info Column -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>Direct Booking</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
+                        Let's Plan Your <br />
+                        <span class="text-gold-gradient font-royal">Feast Together</span>
+                    </h2>
+                    <p class="text-stone-300 text-sm sm:text-base mt-4 leading-relaxed">
+                        Have an upcoming wedding, reception, or celebration? Contact <strong>Rakesh</strong> directly to schedule a tasting session, discuss custom menus, or secure your date.
+                    </p>
+                </div>
+
+                <!-- Contact Badges -->
+                <div class="space-y-4">
+                    <a href="tel:+919573605102" class="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-amber-400 transition-all block">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 block font-semibold">Direct Call / Owner</span>
+                            <span class="text-lg font-bold text-white">+91 95736 05102</span>
+                            <span class="text-xs text-amber-400 block">Rakesh is available 7 days a week</span>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/919573605102?text=Hello%20Rakesh%20ji,%20I%20want%20to%20inquire%20about%20catering%20services%20for%20an%20event." target="_blank" class="glass-panel p-5 rounded-2xl flex items-center gap-4 hover:border-emerald-400 transition-all block">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 block font-semibold">Instant WhatsApp Chat</span>
+                            <span class="text-lg font-bold text-white">+91 95736 05102</span>
+                            <span class="text-xs text-emerald-400 block">Quick quotes & menu PDFs sent instantly</span>
+                        </div>
+                    </a>
+
+                    <div class="glass-panel p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-stone-800 flex items-center justify-center text-amber-400 shrink-0">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 block font-semibold">Service Area</span>
+                            <span class="text-base font-bold text-white">Hyderabad & Across Telangana / Andhra Pradesh</span>
+                            <span class="text-xs text-stone-400 block">Outstation wedding catering services available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Interactive Booking Form -->
+            <div class="lg:col-span-7">
+                <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-amber-500/30">
+                    <h3 class="font-serif text-2xl font-bold text-white mb-2">Book a Catering Consultation</h3>
+                    <p class="text-stone-400 text-xs mb-6">Fill out the details below. Submitting opens a structured WhatsApp chat directly with Rakesh.</p>
+
+                    <form id="bookingForm" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="bookName" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Your Full Name *</label>
+                                <input type="text" id="bookName" required placeholder="e.g. Ramesh Kumar" class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 placeholder-stone-500 text-sm focus:border-amber-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="bookPhone" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Phone Number *</label>
+                                <input type="tel" id="bookPhone" required placeholder="e.g. 9876543210" class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 placeholder-stone-500 text-sm focus:border-amber-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label for="bookDate" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Event Date</label>
+                                <input type="date" id="bookDate" class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="bookEvent" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Event Type</label>
+                                <select id="bookEvent" class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 text-sm focus:border-amber-500 focus:outline-none">
+                                    <option value="Wedding / Reception">Wedding / Reception</option>
+                                    <option value="Sangeet / Mehendi">Sangeet / Mehendi</option>
+                                    <option value="Gruhapravesam">Gruhapravesam</option>
+                                    <option value="Birthday Party">Birthday Party</option>
+                                    <option value="Corporate Event">Corporate Event</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="bookGuests" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Est. Guests</label>
+                                <input type="number" id="bookGuests" placeholder="e.g. 300" class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 placeholder-stone-500 text-sm focus:border-amber-500 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="bookVenue" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Event Venue / City</label>
+                            <input type="text" id="bookVenue" placeholder="e.g. Function Hall in Madhapur, Hyderabad" class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 placeholder-stone-500 text-sm focus:border-amber-500 focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label for="bookNotes" class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-1.5">Special Menu Preferences & Requests</label>
+                            <textarea id="bookNotes" rows="3" placeholder="Tell us if you want Pure Veg, live chaat stalls, specific sweets, or regional dishes..." class="w-full bg-stone-900/90 border border-stone-700 rounded-xl px-4 py-3 text-stone-100 placeholder-stone-500 text-sm focus:border-amber-500 focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl btn-gold text-stone-950 font-bold text-base flex items-center justify-center gap-2 shadow-xl">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            <span>Send Inquiry Directly to Rakesh on WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-800/80 bg-stone-950 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- Brand Info -->
+            <div class="md:col-span-2 space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-400 to-amber-700 p-0.5 flex items-center justify-center">
+                        <div class="w-full h-full bg-stone-950 rounded-[7px] flex items-center justify-center">
+                            <span class="font-royal text-lg font-black text-amber-400">SV</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-royal text-xl font-bold tracking-wider text-gold-gradient block">S.V CATERERS</span>
+                        <span class="text-[10px] tracking-widest text-stone-400 uppercase block font-semibold">Managed by Rakesh</span>
+                    </div>
+                </div>
+                <p class="text-stone-400 text-xs max-w-md leading-relaxed">
+                    Celebrating Indian culinary majesty with grand wedding spreads, pure satvik traditional feasts, and contemporary live food counters. Guided by the values of purity, taste, and genuine hospitality.
+                </p>
+                <div class="pt-2 flex items-center gap-3 text-xs text-amber-400 font-semibold">
+                    <span>Contact:</span>
+                    <a href="tel:+919573605102" class="hover:underline">+91 95736 05102</a>
+                    <span>•</span>
+                    <a href="https://wa.me/919573605102" class="hover:underline">WhatsApp Available</a>
+                </div>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div>
+                <h4 class="font-serif text-sm font-bold text-stone-200 uppercase tracking-wider mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-xs text-stone-400">
+                    <li><a href="#about" class="hover:text-amber-400 transition-colors">About S.V Caterers</a></li>
+                    <li><a href="#menu" class="hover:text-amber-400 transition-colors">Multi-Cuisine Menus</a></li>
+                    <li><a href="#packages" class="hover:text-amber-400 transition-colors">Catering Packages</a></li>
+                    <li><a href="#calculator" class="hover:text-amber-400 transition-colors">Plate Cost Calculator</a></li>
+                    <li><a href="#gallery" class="hover:text-amber-400 transition-colors">Atmosphere Gallery</a></li>
+                    <li><a href="#reviews" class="hover:text-amber-400 transition-colors">Client Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Direct Contact Box -->
+            <div>
+                <h4 class="font-serif text-sm font-bold text-stone-200 uppercase tracking-wider mb-3">Owner Contact</h4>
+                <div class="p-4 rounded-xl bg-stone-900/80 border border-stone-800 space-y-2 text-xs">
+                    <p class="font-bold text-white text-sm">Rakesh</p>
+                    <p class="text-stone-400">Proprietor, S.V Caterers</p>
+                    <p class="text-amber-300 font-bold">
+                        <a href="tel:+919573605102" class="flex items-center gap-1.5">
+                            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-amber-400"></i> +91 95736 05102
+                        </a>
+                    </p>
+                    <p class="text-stone-500 pt-1">Hyderabad, Telangana & Andhra Pradesh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-stone-900 text-center text-xs text-stone-500">
+            &copy; 2026 S.V Caterers. All Rights Reserved. Curated with devotion by Rakesh.
+        </div>
+    </footer>
+
+    <!-- Floating Sticky Action Dock (Mobile & Quick Access) -->
+    <div class="floating-dock md:hidden">
+        <div class="p-2 rounded-2xl bg-stone-950/95 backdrop-blur-lg border border-amber-500/50 shadow-2xl flex items-center justify-between gap-2">
+            <a href="tel:+919573605102" class="flex-1 py-3 px-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-stone-950 font-black text-xs flex items-center justify-center gap-1.5 shadow-md">
+                <i data-lucide="phone-call" class="w-4 h-4 text-stone-950"></i>
+                <span>Call Rakesh</span>
+            </a>
+            <a href="https://wa.me/919573605102?text=Hello%20Rakesh%20ji,%20I%20am%20interested%20in%20S.V%20Caterers%20for%20an%20event." target="_blank" class="flex-1 py-3 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="#calculator" class="py-3 px-3 rounded-xl bg-stone-800 text-amber-300 font-bold text-xs flex items-center justify-center">
+                <i data-lucide="calculator" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Application Data & Script -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
